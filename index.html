@@ -9,7 +9,8 @@
         -->
         <!-- Custom Icons -->
         <script src="https://kit.fontawesome.com/991f75d912.js" crossorigin="anonymous"></script>
-
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=League+Spartan:wght@300&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
         <!-- Custom Interactions -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
         <!-- BootStrap -->
@@ -20,28 +21,30 @@
     </head>
     <body>
     <header>
-        <div class="logo">
-            <i class="fa-solid fa-shield-cat"></i>
-            <img src="" alt="">
-        </div>
         <!--<li class="nav__item"><a href="#home" class="nav__link"></a></li> -->
-        <button class="nav-toggle" aria-label="toggle navigation">
-
-        </button>
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <!--<img src="https://img.icons8.com/fluency-systems-regular/48/000000/star-wars-millenium-falcon.png"/>-->
-                    <a href="#about" class="nav__link"></i> About Me</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#myWork" class="nav__link"><i class="fa-duotone fa-starfighter-twin-ion-engine"></i>My Work</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link"><i class="fa-duotone fa-starship-freighter"></i>Contact</a>
-                </li>
-
-            </ul>
+            <div class="logo fade-enter-done">
+                <a class="logo-intro" style="font-size: 2em;">
+                    <i class="fa-solid fa-shield-cat i-intro"></i>
+                </a>
+            </div>
+            <div class="nav__styled">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <!--<img src="https://img.icons8.com/fluency-systems-regular/48/000000/star-wars-millenium-falcon.png"/>-->
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#myWork" class="nav__link">My Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Resume</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -50,7 +53,7 @@
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Matthew Kauff</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro typing"> </p>
+        <p class="section__subtitle section__subtitle--intro">Full Stack Web Developer</p>
         <img src="/img/TempProfile%20Pic.heic" alt="Me" class="intro__img">
     </section>
     <!-- About Me -->

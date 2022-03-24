@@ -11,15 +11,19 @@
 /* Custom Properties*/
 
 :root {
-    --ff-primary: san-serif;
-    --ff-secondary: mono;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'League Spartan', sans-serif;
+    --ff-terceary:'Lato', sans-serif;
 
     --fw-reg: 300;
     --fw-bold:900;
 
-    --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #ffe8d6;
+    --clr-accent: #a5a58d;
+    --clr-drkaccent: #6b705c;
+    --clr-scndlight: #ddbea9;
+    --clr-scnddark: #cb997e;
 
     --fs-h1: 3rem;
     --fs-h2:2.25rem;
@@ -132,29 +136,25 @@ h3 {
 }
 
 /******** PAGE START *************/
-/*
-.logoIntro {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
 
-    transform: translate(100%);
-    transition: 250ms cubic-bezier(.5, 0, .5, 1);
-    }
- */
+.i-intro {
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--clr-accent);
+}
 
-/* Header */
+.logo a:hover {
+    color: var(--clr-drkaccent);
+}
+
+/* Header / NAV */
 
 header {
     display: flex;
     justify-content: space-between;
-
-}
-
-.logo {
-    max-width: 100px;
 }
 
 .nav {
@@ -162,8 +162,20 @@ header {
     background: rgba(0,0,0,.15);
     color: var(--clr-light);
     width: 100%;
+}
+
+.nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10%;
+    padding: 1em;
+}
+
+.nav .nav__styled {
     display: flex;
     justify-content: flex-end;
+    width: 85%;
 }
 
 .nav__list {
@@ -185,8 +197,6 @@ header {
 .nav__link:hover {
     color: var(--clr-accent);
 }
-
-
 
 /* Intro section */
 
@@ -224,7 +234,7 @@ header {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        width: calc(100% + 2em);
     }
 }
 
@@ -282,7 +292,8 @@ header {
 /* Footer */
 
 .footer {
-    background: #303030;
+    position: fixed;
+    background: #ddbea9;
     color: var(--clr-accent);
     text-align: left;
     padding: 2.5em 0;
@@ -290,15 +301,18 @@ header {
 }
 
 .footer a {
-    color: inherit;
+    color: #ddbea9;
 }
 
 .footer__link {
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
+    color: #cb997e;
+    text-decoration: none;
 }
 
 .footer__link:hover, .social-list__link:hover {
+    color: #a5a58d;
     opacity: .7;
 }
 
@@ -312,4 +326,12 @@ header {
 
 .social-list__item {
     margin: 1em 0;
+}
+
+.social-list__link {
+    color: var(--clr-scnddark);
+}
+
+.typed-cursor--blink {
+    display: none;
 }
