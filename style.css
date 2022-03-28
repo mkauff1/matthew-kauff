@@ -152,6 +152,66 @@ h3 {
 
 /* Header / NAV */
 
+#preloader {
+    background: var(--clr-drkaccent);
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: 2000ms;
+}
+
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: -999;
+
+}
+
+.logo-intro {
+    position: fixed;
+    top: 33%;
+    left: 48%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+**here is the keyframe code for fadeout**
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to{opacity: 0;}
+}
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -292,6 +352,7 @@ header {
 /**** Change Image to Text on Hover ****/
 .project-holder {
     position: relative;
+    width: 80%;
 }
 
 .project-holder .image, .project-holder .text {
@@ -315,10 +376,13 @@ header {
 
 /**** Footer ****/
 
-footer {
+footer ul{
     position: fixed;
     bottom: 0;
-
+}
+footer .footer__link {
+    position: fixed;
+    bottom: 130px;
 }
 
 .footer {
@@ -327,7 +391,7 @@ footer {
     color: var(--clr-accent);
     text-align: left;
     padding: 2.5em 0;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
 }
 
 .footer a {
@@ -335,7 +399,10 @@ footer {
 }
 
 .footer__link {
-    font-size: var(--fs-h3);
+    transform: rotate(90deg);
+    /* margin-left: 100%; */
+
+    font-size: 1.1em;
     font-weight: var(--fw-bold);
     color: #cb997e;
     text-decoration: none;
@@ -366,3 +433,9 @@ footer {
     display: none;
 }
 
+.social-list__line {
+    border-left: 2px solid var(--clr-scnddark);
+    height: 150px;
+    margin-left: 6px;
+    margin-bottom: -15px;
+}
