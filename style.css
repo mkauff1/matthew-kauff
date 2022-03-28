@@ -281,7 +281,7 @@ header {
     }
 }
 
-/* My Work */
+/**** My Work ****/
 
 .my-work {
     background-color: var(--clr-dark);
@@ -289,7 +289,37 @@ header {
     text-align: center;
 }
 
-/* Footer */
+/**** Change Image to Text on Hover ****/
+.project-holder {
+    position: relative;
+}
+
+.project-holder .image, .project-holder .text {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project-holder .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.project-holder:hover .image {
+    opacity: 0;
+}
+
+.project-holder:hover .text {
+    opacity: 1;
+}
+
+/**** Footer ****/
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+}
 
 .footer {
     position: fixed;
@@ -335,3 +365,4 @@ header {
 .typed-cursor--blink {
     display: none;
 }
+
