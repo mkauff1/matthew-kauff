@@ -2,26 +2,22 @@
 const logoIntro = document.querySelector(".logo-intro");
 
 var typed = new Typed(".typing",{
-    strings:["Full Stack Web Developer ","Graphic Designer ","Codeup student " ],
+    strings:["Veteran","Youth Pastor","Husband","Mentor","Father"],
     typeSpeed:120,
-    BackSpeed:40,
+    BackSpeed:80,
     loop:true
 })
 
-logoIntro.addEventListener('click', () =>{
-    document.body.classList.toggle("intro-refresh")
-})
+//logoIntro.addEventListener('click', () =>{
+//    document.body.classList.toggle("intro-refresh")
+//})
 
 //var loader = document.getElementById("preloader");
-
-//window.addEventListener("load", function() {
-//    loader.style.display = "none";
-//});
-
-logoJ(){
+/*
+window.addEventListener("click", function logoJ(){
     var loader = document.getElementById("preloader");
     var loading = 0;
-    var id = setInterval(loads, 20);
+    var id = setInterval(loads, 1000);
 
     function loads() {
         if (loading == 0) {
@@ -37,5 +33,26 @@ logoJ(){
             }
         }
     }
-};
+});
+*/
+
+//var loader = document.getElementById("preloader");
+/*
+$(window).load(function() {
+    $(".preloader").delay(5000).fadeOut("slow");
+    $("#overlayer").delay(5000).fadeOut("slow");
+})
+*/
+
+/*
+$(document).ready(function(){
+    window.setTimeout('fadeout();', 2000);
+});
+
+function fadeout(){
+    $('#loader').delay(1000).fadeOut('slow', function() {
+        $('.notLoaded').removeClass('notLoaded');
+    });
+}
+*/
 
