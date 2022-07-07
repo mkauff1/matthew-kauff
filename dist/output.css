@@ -644,6 +644,8 @@ strong {
 
 .btn {
   display: inline-block;
+  height: 60px;
+  width: 180px;
   padding: .5em 1.5em;
   background: var(--clr-accent);
   color: var(--clr-dark);
@@ -654,17 +656,17 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border-style: none;
 }
 
 .first-look{
   text-align: center;
 }
 
-/*
-.btn-hover {
-    transform: scale(1.1);
+.btn:hover {
+  color: #6b705c;
+  background-color: #303030;
 }
-*/
 
 /* Typography */
 
@@ -908,6 +910,26 @@ header {
   }
 }
 
+/* Technical Skills */
+
+.background__green {
+  background-color: var(--clr-drkaccent);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.my-skills {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title--mySkills {
+  grid-area: title;
+}
+
+.section__subtitle--mySkills {
+}
+
 /* About ME */
 
 .about-me {
@@ -954,13 +976,30 @@ header {
 
 /**** My Work ****/
 
-.my-work {
+.background__dark {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
 }
 
-/*Original Card Colors #2d3548; linear-gradient(15deg, #0f4667 0%, #2a6973 150%)*/
+.my-work {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title--mywork {
+  grid-area: title;
+}
+
+.section__subtitle--mywork {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  position: relative;
+  left: -1em;
+  width: calc(100% + 2em);
+  padding-left: 1em;
+  padding-right: calc(100% + 3em);
+}
 
 *{
   border: 0;
@@ -1139,7 +1178,7 @@ footer .footer__link {
 .footer__link {
   position: fixed;
   right: -110px;
-  bottom: 0;
+  margin-bottom: 30px;
   rotate: 90deg;
   font-size: 1.1em;
   font-weight: var(--fw-bold);
