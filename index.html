@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Matt Kauff Portfolio</title>
+        <title>Matthew Kauff Portfolio</title>
         <!-- ***
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         -->
@@ -20,6 +20,8 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css">
+        <!-- Tailwind CSS -->
+        <link href="/dist/output.css" rel="stylesheet">
     </head>
     <body>
     <!--
@@ -43,7 +45,7 @@
             <img src="/img/Matthew_Kauff.jpeg" alt="Me" class="intro__img">
         </section>
         <button type="button" class="btn btn-primary btn-center">
-            <a href="#myWork">View My Work</a>
+            <a href="#myWork">My Work</a>
         </button>
     </main>
 
@@ -91,44 +93,39 @@
 
     <!-- My work -->
     <section class="my-work" id="myWork">
-        <h2 class="section__title section__title--myWork">My Work</h2>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide work" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active project-holder" data-bs-interval="5000">
-                        <img src="/img/WeatherMapProject.png" class="d-block image" alt="Weather info with map box application">
-                        <div class="carousel-caption d-none d-md-block text">
-<!--                        <h5>Weather Map</h5>-->
-                        </div>
+        <h2 class="section__title section__title--myWork">Projects</h2>
+        <section class="hero-section">
+            <div class="card-grid">
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(img/BombReporterProject.jpg)"></div><!--url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80-->
+                    <div class="card__content">
+                        <p class="card__category">FullStack</p>
+                        <h3 class="card__heading">Bomb Reporter</h3>
                     </div>
-                    <div class="carousel-item project-holder" data-bs-interval="5000">
-                        <img src="/img/Bomb%20Reporter%20Project%20copy.jpg" class="d-block w-100 image" alt="...">
-                        <div class="carousel-caption d-none d-md-block text">
-<!--                            <h5>Bomb Reporter React App</h5>-->
-                            <p></p>
-                        </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(img/WeatherMapProject.png)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Frontend</p>
+                        <h3 class="card__heading">Weather Map</h3>
                     </div>
-                    <div class="carousel-item project-holder" data-bs-interval="5000">
-                        <img src="/img/Contacts_Manager.png" class="d-block w-100 image" alt="...">
-                        <div class="carousel-caption d-none d-md-block text">
-<!--                            <h5>Contacts Manager</h5>-->
-                            <p></p>
-                        </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Category</p>
+                        <h3 class="card__heading">Example Card Heading</h3>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-        </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Category</p>
+                        <h3 class="card__heading">Example Card Heading</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
     </section>
 
     <!-- Contact -->
