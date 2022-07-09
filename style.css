@@ -363,15 +363,18 @@ header {
 .my-skills {
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .section__title--mySkills {
     grid-area: title;
-
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
 }
 
 .section__subtitle--mySkills {
+
 }
 
 /* About ME */
@@ -431,7 +434,6 @@ header {
 
 .section__title--mywork {
     grid-area: title;
-
 }
 
 .section__subtitle--mywork {
@@ -472,24 +474,24 @@ body{
 
 .card-grid{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
     width: 100%;
 }
 
-@media(min-width: 540px){
-    .card-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+/*@media(min-width: 540px){*/
+/*    .card-grid{*/
+/*        grid-template-columns: repeat(2, 1fr);*/
+/*    }*/
+/*}*/
 
-@media(min-width: 960px){
-    .card-grid{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+/*@media(min-width: 960px){*/
+/*    .card-grid{*/
+/*        grid-template-columns: repeat(2, 1fr);*/
+/*    }*/
+/*}*/
 
 .card{
     list-style: none;
